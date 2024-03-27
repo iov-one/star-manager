@@ -1,0 +1,64 @@
+@import "src/styles/constants";
+
+.transactions-table {
+  overflow-y: auto;
+
+  .transactions-table-content {
+    width: $wide-view-width;
+    background-color: $primary-contrast-text;
+    margin: 24px auto;
+    box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.15);
+    border-Radius: 4px;
+
+    .transactions-table-content-table {
+      table-layout: fixed;
+
+      .transactions-table-content-body {
+      }
+    }
+
+    .transactions-table-content-header {
+      height: 72px;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .transactions-table {
+    width: 100%;
+
+    .transactions-table-content {
+      overflow-x: hidden;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      margin: 4px 0 122px 0;
+
+      .transactions-table-content-table {
+        display: block;
+      }
+
+      .transactions-table-content-body {
+        display: block;
+      }
+
+      .transactions-table-content-header {
+        display: none;
+      }
+
+      .transactions-table-content-table-column {
+        .col:nth-child(1) {
+          width: 60%;
+        }
+
+        .col:nth-child(2) {
+          width: 20%;
+        }
+
+        .col:nth-child(3) {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

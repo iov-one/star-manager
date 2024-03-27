@@ -1,0 +1,108 @@
+@import "src/styles/constants";
+
+.register-account-container {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 36px 24px 36px;
+  margin-top: -14px;
+
+  .register-account-under-open-heading-container {
+    .register-account-under-open-heading-title {
+      text-align: center;
+      background-color: $primary-main;
+      color: white;
+      padding: 8px 22px 8px 22px;
+      margin: 32px auto 38px auto;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      font-size: medium;
+      border-radius: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  .wallet-actions-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .about-me-container {
+    margin-top: 24px;
+  }
+}
+
+.account-registered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 36px 36px 24px 36px;
+  margin-top: -36px;
+  gap: 8px;
+
+  .account-registered-head {
+    .registered-starname {
+      color: $primary-main;
+    }
+  }
+
+  .first-things {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .first-things-head {
+      border: 2px solid $primary-main;
+      background-color: $primary-main;
+      color: white;
+      padding: 8px 32px;
+      border-radius: 12px;
+      margin: 8px auto;
+      .first-things-heading {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+
+    .upper-note {
+      margin-top: 8px;
+      text-align: center;
+      font-size: medium;
+    }
+
+    .mnemonic-note {
+      color: $primary-main;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 12px auto;
+    }
+  }
+
+  .starname-application-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: medium;
+    }
+
+    button {
+      margin-top: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register-account-container {
+    width: 100%;
+  }
+}

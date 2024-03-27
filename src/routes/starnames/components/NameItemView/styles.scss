@@ -1,0 +1,91 @@
+@import "src/styles/constants";
+
+.name-item-view-menu-item {
+  i {
+    margin: 0 12px 0 8px;
+  }
+}
+
+.name-item-view-content {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:nth-child(2):not(.domain-view) {
+    padding-top: 2px;
+  }
+
+  .name-item-view-heading {
+    display: flex;
+    flex-direction: column;
+
+    .name-item-view-heading-title {
+      margin-bottom: 8px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      gap: 8px;
+
+      .name-title {
+        font-size: x-large;
+        font-weight: 600;
+        span {
+          margin-left: 3px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  .name-item-view-content-actions {
+    display: flex;
+    padding: 0 16px;
+    height: 40px;
+    border-radius: 20px;
+    transition: background-color 0.25s;
+
+    &:hover {
+      background: rgba(black, 0.05);
+    }
+
+    .name-item-view-content-actions-button {
+      display: flex;
+      align-items: center;
+
+      i,
+      p {
+        display: block;
+        cursor: pointer;
+        font-weight: 600;
+        color: $primary-main;
+        margin: 0 4px;
+      }
+    }
+  }
+}
+
+.names-under-domain-view {
+  margin-left: 4%;
+  padding: 16px 32px 16px 32px;
+
+  &:last-child {
+    padding-bottom: 32px;
+  }
+}
+
+.domain-view {
+  border-top: 1px solid rgba(black, 0.075);
+}
+
+@media (max-width: $min-desktop-width) {
+  .name-item-view-content {
+    padding: 24px 0 16px 16px;
+
+    .name-item-view-heading {
+      .name-item-view-heading-title {
+        margin: 0;
+      }
+    }
+  }
+}

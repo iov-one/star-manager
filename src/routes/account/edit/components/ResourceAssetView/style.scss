@@ -1,0 +1,123 @@
+@import "src/styles/constants";
+
+.asset-chips-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.resource-item-view {
+  padding: 24px;
+  margin: 0 0 32px 0;
+
+  .resource-item-view-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .resource-item-view-heading-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+
+      i {
+        font-size: 16px;
+        color: $text-secondary;
+      }
+
+      &:hover {
+        background-color: lighten($text-secondary, 25);
+      }
+    }
+  }
+
+  .resource-item-view-edit-box {
+    margin: 16px 0 32px 0;
+    display: flex;
+
+    .resource-item-view-edit-box-asset-dropdown {
+      height: 50px;
+      display: flex;
+      width: 14ex;
+    }
+
+    .resource-item-view-edit-box-address {
+      margin: 0 0 0 8px;
+      width: 100%;
+    }
+  }
+
+  .resource-item-view-informative-message {
+    display: flex;
+    align-items: flex-start;
+    color: $text-primary;
+    opacity: 0.75;
+
+    i {
+      font-size: 16px;
+      padding: 3px;
+    }
+
+    span {
+      line-height: 1.15;
+      margin: 0 8px;
+    }
+  }
+}
+
+.resource-item-view-edit-box-asset-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .resource-item-view-edit-box-asset-item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px 0 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  .resource-item-view-edit-box-asset-item-text {
+    flex: 1 1;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .asset-chips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resource-item-view {
+    border: none;
+    border-radius: 0;
+
+    .resource-item-view-edit-box {
+      flex-direction: column;
+
+      .resource-item-view-edit-box-asset-dropdown {
+        width: 100%;
+      }
+
+      .resource-item-view-edit-box-address {
+        width: 100%;
+        margin: 8px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "src/styles/constants";
+
+.dialog-content-container {
+  .score-loading-container {
+    & > * {
+      margin-top: 4%;
+    }
+  }
+
+  .score-container {
+    width: fit-content;
+    padding: 2px 10px 2px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-main;
+    border-radius: 4px;
+    font-size: x-large;
+    color: white;
+    span {
+      // red green yello
+      // color: rgb(252, 152, 152);
+      // color: rgb(106, 248, 118);
+      // color: rgb(248, 230, 128);
+      margin-left: 4px;
+      font-weight: 600;
+    }
+
+    i {
+      font-style: normal;
+      font-size: medium;
+      display: inline-flex;
+      align-items: flex-end;
+      margin: auto auto 3px 2px;
+      opacity: 0.8;
+    }
+  }
+
+  .chart-container {
+    margin-top: 20px;
+
+    canvas {
+      max-height: 320px;
+    }
+  }
+}

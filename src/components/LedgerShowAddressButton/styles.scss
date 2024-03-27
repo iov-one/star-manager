@@ -1,0 +1,17 @@
+@import "src/styles/constants";
+
+.ledger-show-address-button {
+  display: block;
+  text-align: center;
+  margin: 32px auto 0 auto;
+
+  .ledger-show-address-button-contained {
+    background-color: lighten($primary-light, 0.05);
+    font-weight: 600;
+    color: $primary-main;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+
+}

@@ -1,0 +1,23 @@
+@import "src/styles/constants.scss";
+
+.container {
+  width: $normal-view-width;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .buttons-container {
+    margin-top: -8%;
+    width: $normal-view-width - 180px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.add-certificate-container {
+  margin-bottom: 1%;
+  hr.separator {
+    width: 100%;
+    border-bottom: solid 1px;
+    position: relative;
+    margin: 8px 0px 26px 0px;
+  }
+
+  hr.separator::before {
+    content: "OR";
+    position: absolute;
+    left: 46%;
+    top: -8px;
+    background-color: #fff;
+    padding: 0px 10px;
+  }
+
+  .upload-action-container {
+    display: flex;
+    justify-content: center;
+  }
+}

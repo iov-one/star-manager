@@ -1,0 +1,20 @@
+@import "src/styles/constants";
+
+.validators-table-content-header {
+  height: 48px;
+  background-color: rgb(237, 234, 234);
+
+  .validators-header-name-cell {
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .validators-table-content-header {
+    display: none;
+
+    .validators-header-name-cell {
+      padding-left: 2%;
+    }
+  }
+}

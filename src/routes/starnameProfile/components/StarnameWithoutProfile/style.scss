@@ -1,0 +1,35 @@
+@import "../../Themes/colors.scss";
+
+.starname-not-found-view {
+  margin: 114px auto 24px auto;
+  padding: 32px;
+  width: 500px;
+  background-color: white;
+  border-radius: 15px;
+
+  .message {
+    font-family: "Mulish", sans-serif;
+    font-size: 19px;
+
+    .starname {
+      color: $lightBlue;
+      font-weight: 800;
+    }
+  }
+
+  a {
+    display: block;
+    font-family: "Mulish", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .starname-not-found-view {
+    border-radius: 0;
+    margin: 40px 0 0 0;
+    width: 100%;
+  }
+}

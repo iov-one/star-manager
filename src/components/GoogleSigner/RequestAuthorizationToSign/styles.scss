@@ -1,0 +1,180 @@
+@import "src/styles/constants";
+
+.google-signer-request-authorization-to-sign {
+  white-space: nowrap;
+  background-color: $background-default;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .google-signer-request-authorization-tab {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    transition: margin 0.24s;
+    margin: 0;
+
+    &:not(.active) {
+      &:nth-child(1) {
+        margin-left: -100%;
+      }
+    }
+
+    .google-signer-request-authorization-to-sign-content {
+      display: flex;
+      flex-direction: column;
+      background-color: $background-paper;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .google-signer-request-authorization-to-sign-content-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 16px;
+
+        .google-signer-request-authorization-to-sign-content-field {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px dotted $primary-light;
+          padding: 4px 0;
+
+          .google-signer-request-authorization-to-sign-content-field-value {
+            color: $text-primary;
+            flex: 1;
+            text-align: right;
+          }
+        }
+
+        .google-signer-request-authorization-to-sign-content-details-entries {
+          flex: 1 0 0;
+          margin: 16px 0 0 0;
+
+          .google-signer-request-authorization-to-sign-content-details-entries-entry {
+            display: flex;
+            align-items: center;
+
+            .google-signer-request-authorization-to-sign-content-details-entries-entry-text {
+              flex: 1 0 0;
+            }
+
+            .google-signer-request-authorization-to-sign-content-details-entries-entry-icon {
+              flex: 0 0 32px;
+              display: block;
+              height: 24px;
+
+              i {
+                line-height: 24px;
+                font-size: 20px;
+                color: $primary-main;
+              }
+            }
+
+            .google-signer-request-authorization-to-sign-content-details-entries-entry-text-line1 {
+              display: flex;
+              align-items: center;
+
+              h6:nth-child(2) {
+                margin: 0 4px 0 8px;
+              }
+            }
+
+            .google-signer-request-authorization-to-sign-content-details-entries-entry-text-line2 {
+              display: flex;
+              align-items: center;
+
+              h6:first-child {
+                margin: 0 8px 0 0;
+              }
+            }
+          }
+        }
+      }
+
+      .google-signer-request-authorization-toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        padding: 0 8px;
+
+        button {
+          background: none;
+          color: $primary-main;
+
+          i {
+            margin: 0 8px 0 0;
+          }
+        }
+      }
+
+      .google-signer-request-authorization-to-sign-content-transaction {
+        overflow-y: auto;
+        margin-top: 32px /* there are also 16px from the padding of the parent */;
+        box-shadow: 0 2px 8px -5px black;
+        border-radius: 6px;
+
+        div {
+          font-family: monospace;
+          padding: 16px;
+          white-space: pre-wrap;
+          background-color: $background-default;
+        }
+      }
+
+      .google-signer-request-authorization-to-sign-content-title {
+        padding: 0 16px;
+        white-space: normal;
+      }
+
+      .google-signer-request-authorization-to-sign-content-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+
+        .google-signer-request-authorization-to-sign-content-fee {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          margin: 16px 0;
+          text-align: center;
+          font-weight: bold;
+
+          span {
+            margin: 0 8px;
+            font-weight: bold;
+
+            &:nth-child(2) {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+
+      .google-signer-request-authorization-to-sign-content-buttons {
+        display: flex;
+        align-items: center;
+        margin: 24px 0 0 0;
+        text-align: right;
+
+        button {
+          display: block;
+          width: 150px;
+          margin-left: 8px;
+          padding: 0;
+
+          &:first-child {
+            margin-right: auto;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}

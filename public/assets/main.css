@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 200;
+  src: url(fonts/Muli/Mulish-ExtraLight.ttf) format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Muli/Mulish-Light.ttf) format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Muli/Mulish-Regular.ttf) format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/Muli/Mulish-SemiBold.ttf) format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: bold;
+  src: url(fonts/Muli/Mulish-ExtraBold.ttf) format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  src: url(fonts/Muli/Mulish-Black.ttf) format("truetype");
+  font-display: block;
+}
+
+* {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal-container-updated {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1301;
+}
+
+.alert-toast {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 128px;
+  width: 500px;
+  margin: 12px;
+  z-index: 2147483648;
+}
+
+.tooltip-page-cover {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.tooltip-page-cover.active {
+  pointer-events: all;
+  z-index: 2147483648;
+}
+
+.elevated {
+  box-shadow: 0 2px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  color: #5b72b7;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-container-updated {
+    width: 100%;
+  }
+
+  .modal-container-updated > .MuiPaper-root {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .alert-toast {
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

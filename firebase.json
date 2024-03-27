@@ -1,0 +1,30 @@
+{
+  "hosting": [
+    {
+      "public": "build",
+      "target": "prd",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [ {
+          "source": "**",
+          "destination": "/index.html"
+        } ]
+    },
+    {
+      "public": "build",
+      "target": "stg",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [ {
+          "source": "**",
+          "destination": "/index.html"
+        } ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+@import "src/styles/constants";
+
+.address-table {
+  width: 100%;
+
+  .address-table-header {
+    display: flex;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+
+    .address-table-header-cell {
+      padding: 24px 4px;
+      &:first-child {
+        flex: 0 0 12ex;
+      }
+    }
+  }
+}

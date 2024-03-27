@@ -1,0 +1,61 @@
+@import "src/styles/constants";
+
+.new-profile-flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $normal-view-width;
+  margin: 0 auto;
+  height: 100%;
+  flex: 1;
+
+  h3 {
+    text-align: center;
+  }
+
+  .new-profile-flow-text-and-buttons {
+    span {
+      display: block;
+      text-align: center;
+      max-width: 400px;
+      margin: 14px auto;
+    }
+
+    .new-profile-flow-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 48px 0;
+
+      button {
+        width: 300px;
+        margin: 4px;
+
+        span {
+          display: initial;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .new-profile-flow {
+    width: 100%;
+    padding: 0 16px;
+    overflow: hidden;
+
+    .new-profile-flow-text-and-buttons {
+      max-width: initial;
+      width: 100%;
+
+      .new-profile-flow-buttons {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

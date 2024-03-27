@@ -1,0 +1,20 @@
+@import "src/styles/constants";
+
+.staked-validators-header {
+  height: 48px;
+  background-color: rgb(237, 234, 234);
+
+  .staked-validators-header-name-cell {
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .staked-validators-header {
+    display: none;
+
+    .staked-validators-header-name-cell {
+      padding-left: 2%;
+    }
+  }
+}

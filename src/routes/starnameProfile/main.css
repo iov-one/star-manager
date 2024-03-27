@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "DIN";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Regular.otf");
+}
+
+@font-face {
+  font-family: "DIN-Black";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Black.otf");
+}
+
+@font-face {
+  font-family: "DIN-Bold";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Bold.otf");
+}
+
+@font-face {
+  font-family: "DIN-Light";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Light.otf");
+}
+
+@font-face {
+  font-family: "DIN-LightItalic";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-LightItalic.otf");
+}
+
+@font-face {
+  font-family: "DIN-Medium";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Medium.otf");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-Regular.otf");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DIN-RegularAlternate.otf");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-display: block;
+  src: local("DIN"), url("../../assets/starnameProfile/fonts/DINPro.otf");
+}
+
+.app-underline {
+  cursor: pointer;
+}
+
+.more-details a {
+  color: #868686 !important;
+}

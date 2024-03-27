@@ -1,0 +1,15 @@
+.tx-result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  svg {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  & > * {
+    margin-bottom: 16px;
+  }
+}

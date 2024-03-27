@@ -1,0 +1,106 @@
+{
+  "websiteName": "localhost",
+  "apiUrl": "http://localhost:1317",
+  "rpcUrl": "http://localhost:26657",
+  "faucetUrl": "http://localhost:8080",
+  "starnameProfileBaseUrl": "https://starname.me/",
+  "blockExplorerUrl": "",
+  "broker": "broker*iov",
+  "swapSmartContractAddress": "0x4dC25124C4cd4C0E1022c02FD0c38177082377Db",
+  "etherscanAPIKey": "",
+  "etherscanAPIUrl": "https://api.etherscan.io/api",
+  "ethChainId": 4,
+  "pinataConfig": {
+    "apiKey": "",
+    "secretKey": ""
+  },
+  "alephConfig": {
+    "apiServer": "https://api2.aleph.im",
+    "channel": "TEST"
+  },
+  "keplrConfig": {
+    "gasPriceStep": {
+      "low": 5,
+      "average": 10,
+      "high": 20
+    }
+  },
+  "tokens": {
+    "tiov": {
+      "ticker": "IOV",
+      "subunitsPerUnit": 1000000,
+      "subunitName": "tiov"
+    }
+  },
+  "mainAsset": {
+    "name": "IOV",
+    "symbol": "IOV",
+    "starname-uri": "asset:iov",
+    "logo": "/assets/icons/fallback-asset.png",
+    "denom": "tiov",
+    "trustwallet-uid": null,
+    "coingeckoId": "starname"
+  },
+  "gasPrice": {
+    "denom": "tiov",
+    "amount": "2"
+  },
+  "gasMap": {
+    "/starnamed.x.starname.v1beta1.MsgRenewDomain": 250000,
+    "/starnamed.x.starname.v1beta1.MsgRenewAccount": 250000,
+    "/starnamed.x.starname.v1beta1.MsgReplaceAccountResources": 20000,
+    "/starnamed.x.starname.v1beta1.MsgTransferDomain": 300000,
+    "/starnamed.x.escrow.v1beta1.MsgCreateEscrow": 300000,
+    "/starnamed.x.escrow.v1beta1.MsgTransferToEscrow": 300000,
+    "/starnamed.x.escrow.v1beta1.MsgUpdateEscrow": 300000,
+    "/starnamed.x.escrow.v1beta1.MsgRefundEscrow": 300000,
+    "/cosmos.bank.v1beta1.MsgSend": 80000,
+    "/cosmos.staking.v1beta1.MsgBeginRedelegate": 300000,
+    "default": 200000
+  },
+  "walletConnect": {
+    "bridge": "https://bridge.walletconnect.org",
+    "clientMeta": {
+      "name": "Starname Manager",
+      "description": "Starname Manager",
+      "url": "https://starname.me",
+      "icons": []
+    }
+  },
+  "basicEditionDomains": {
+    "starname": ["iov"],
+    "community": []
+  },
+  "googleOAuthClientId": "1069565466384-ejqid58budhg3ou5044dshlqd43e1vuk.apps.googleusercontent.com",
+  "gdriveMnemonicLength": 24,
+  "twitterVerifierUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/verifiers/twitter/",
+  "googleSignInNotifyUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/sign-in-callback/",
+  "freeStarnameApiUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/services/free-starname/",
+  "sendConfirmationUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/services/send-confirmation/",
+  "captureEventsUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/services/stats/",
+  "scoreChainApiUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/services/scorechain/",
+  "twoFactorAuthUrls": {
+    "check": "http://localhost:5001/starname-manager-devel/us-central1/api/services/2fa/check",
+    "register": "http://localhost:5001/starname-manager-devel/us-central1/api/services/2fa/register",
+    "verify": "http://localhost:5001/starname-manager-devel/us-central1/api/services/2fa/verify",
+    "validate": "http://localhost:5001/starname-manager-devel/us-central1/api/services/2fa/validate",
+    "remove": "http://localhost:5001/starname-manager-devel/us-central1/api/services/2fa/remove"
+  },
+  "instagramConfig": {
+    "requestUrl": "http://localhost:5001/starname-manager-devel/us-central1/api/verifiers/instagram/",
+    "clientId": "949053475855246",
+    "redirectUri": "/profile/instagram",
+    "scope": "user_profile",
+    "responseType": "code"
+  },
+  "validatorsImageLookupApiUrl": "https://keybase.io/_/api/1.0/user/lookup.json",
+  "managerUrl": "https://localhost:3004",
+  "autoChains": ["ATOM", "CRO", "OSMO"],
+  "turstedCertifiers": [
+    {
+      "id": "starname.me",
+      "public_key": "b68e3e42bb0b9e61f01ab4c950ba06b88096956e813c4b068bd1844e99c8e61f"
+    }
+  ],
+  "certifierAppUrl": "https://localhost:3000"
+}

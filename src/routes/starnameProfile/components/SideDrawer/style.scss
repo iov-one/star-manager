@@ -1,0 +1,23 @@
+@import "src/styles/constants";
+@import "../../Themes/sizes.scss";
+@import "../../Themes/fontFamily.scss";
+
+.sidemenu-container {
+  height: 100%;
+
+  .sideDeveloper-text {
+    color: $text-primary;
+    margin-bottom: $double-radius;
+    font-family: $DIN;
+    margin-top: 20px;
+    font-size: $title-font;
+  }
+
+  .submenu {
+    color: $text-primary;
+    margin-bottom: 5px;
+    font-family: $DIN;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}

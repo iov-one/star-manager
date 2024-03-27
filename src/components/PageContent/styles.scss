@@ -1,0 +1,86 @@
+@import "src/styles/constants";
+
+.page-content-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 64px auto;
+
+  .paper-container {
+    &.normal {
+      width: $normal-view-width;
+      max-width: $normal-view-width;
+    }
+
+    &.narrow {
+      width: $narrow-view-width;
+      max-width: $narrow-view-width;
+    }
+
+    &.wide {
+      width: $wide-view-width;
+      max-width: $wide-view-width;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 40px;
+    }
+
+    .avatar {
+      font-size: 27.5px;
+      width: 72px;
+      height: 72px;
+      margin: -76px 0 40px 0;
+      border-radius: 36px;
+
+      &.accent {
+        background-color: $accent-main;
+      }
+
+      &.primary {
+        background-color: $primary-main;
+      }
+
+      img, svg {
+        margin: 20px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .buttons {
+      max-width: 342px;
+      margin: 24px auto;
+    }
+
+    .details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .page-content-container {
+    width: 100%;
+
+    .paper-container {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 0 16px;
+
+      .content {
+        padding: 16px;
+      }
+
+      .avatar {
+        margin: -52px 0 24px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "src/styles/constants";
+
+@media (max-width: $min-desktop-width) {
+  .transactions-table-row, /* This is so that it works if present on non tr elements */
+  tr.transactions-table-row {/* This is to make it specific enough that it overrides the theme */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    width: 100%;
+    padding: 8px;
+
+    border-bottom: 1px solid $primary-light;
+  }
+}

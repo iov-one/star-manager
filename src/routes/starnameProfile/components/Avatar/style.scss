@@ -1,0 +1,7 @@
+@import "../../Themes/sizes.scss";
+
+.user-avatar {
+  width: $normal-width-percentage;
+  min-width: $avatar-min-width;
+  border-radius: $small-width-percentage;
+}

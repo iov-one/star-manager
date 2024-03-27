@@ -1,0 +1,34 @@
+.validators-table-content-row {
+  &:hover {
+    cursor: pointer;
+  }
+  .validators-table-content-row-title {
+    width: 35%;
+
+    .validators-table-content-row-title-container {
+      padding-left: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .validators-table-content-row-voting-power {
+    width: 20%;
+  }
+
+  .validators-table-content-row-commission {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .validators-table-content-row {
+    .validators-table-content-row-title {
+      width: 60%;
+    }
+    .validators-table-content-row-commission {
+      width: 10%;
+    }
+  }
+}

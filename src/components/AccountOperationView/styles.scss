@@ -1,0 +1,41 @@
+@import "src/styles/constants";
+
+.account-operation-view {
+  display: flex;
+  width: $normal-view-width;
+
+  margin: 32px auto;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: $background-default;
+
+  .account-operation-view-form-paper {
+    width: 100%;
+  }
+
+  .account-operation-view-form-container {
+    width: 100%;
+  }
+
+  .account-operation-view-form-content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .account-operation-view {
+    width: 100%;
+    margin: 0;
+
+    .account-operation-view-paper ,
+    .account-operation-view-form-paper {
+      border: none;
+      border-radius: 0;
+    }
+
+    .account-operation-view-form-content {
+      padding: 24px;
+    }
+  }
+}

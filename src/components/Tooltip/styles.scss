@@ -1,0 +1,27 @@
+@import "src/styles/constants";
+
+.tooltip-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .question-mark {
+    padding: 2px;
+
+    &.rtl {
+      margin-right: 1ex;
+    }
+
+    &.ltr {
+      margin-left: 1ex;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .tooltip-container {
+    .question-mark {
+      display: none;
+    }
+  }
+}

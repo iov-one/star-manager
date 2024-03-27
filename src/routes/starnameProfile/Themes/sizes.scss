@@ -1,0 +1,82 @@
+/**  Screen break pixels*/
+$sm-break: 576px;
+$md-break: 768px;
+$lg-break: 992px;
+$xl-break: 1200px;
+
+/** Font Sizes */
+$smallest-font: 8px;
+$smaller-font: 10px;
+$small-font: 12px;
+$normal-font: 14px;
+$big-font: 16px;
+$bigger-font: 18px;
+$biggest-font: 20px;
+$heading-font: 22px;
+$title-font: 28px;
+$main-heading-font: 40px;
+$landing-font: 50px;
+$larger-landing-font: 60px;
+
+/** Radius */
+$small-radius: 2px;
+$normal-radius: 4px;
+$normal-radius: 4px;
+$double-radius: 8px;
+$big-radius: 15px;
+$button-bigger-radius : 38px;
+$small-border-radius: 50%;
+
+/** Margin and Paddings */
+$small-gap: 5px;
+$base-gap: 10px;
+$medium-gap: 15px;
+$double-gap: 20px;
+$big-gap: 30px;
+$bigger-gap: 40px;
+$larger-gap: 80px;
+$very-larger-gap: 120px;
+
+/** Logo/Image Dimensions */
+$tiny-size: 10px;
+$small-size: 25px;
+$normal-size: 50px;
+$medium-size: 50px;
+$large-size: 100px;
+$double-large-size: 150px;
+$largest-size: 200px;
+$MAX-largest-size: 400px;
+
+/** Dimensions */
+$small-width: 20px;
+$normal-width: 30px;
+$large-width: 50px;
+$very-large-width: 80px;
+$small-width-percentage: 50%;
+$normal-width-percentage: 100%;
+
+/** UI sizes */
+$p-header-height: 110px;
+$p-header-padding: 150px;
+$header-height: 80px;
+$hh-padding: 114px;
+$hv-padding: 18px;
+$tab-height: 45px;
+$button-width: 130px;
+$button-height: 40px;
+$button-bigger-width: 280px;
+$button-bigger-height: 50px;
+$input-height: 40px;
+$avatar-min-width: 80px;
+$avatar-min-height: 80px;
+
+/** Line-height */
+$small-line-height: 104.05%;
+$medium-line-height: 121.5%;
+$normal-line-height: 130%;
+$large-line-height: 138.05%;
+
+
+@media screen and (max-width: $md-break) {
+  $p-header-padding: 20px;
+}

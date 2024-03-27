@@ -1,0 +1,19 @@
+.create-escrow-amount-container {
+  max-width: 280px;
+}
+
+.create-escrow-deadline-container {
+  max-width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .create-escrow-amount-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .create-escrow-deadline-container {
+    width: 100%;
+    max-width: none;
+  }
+}

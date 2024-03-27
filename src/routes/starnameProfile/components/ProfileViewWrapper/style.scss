@@ -1,0 +1,88 @@
+@import "../../Themes/colors.scss";
+@import "../../Themes/sizes.scss";
+@import "../../Themes/fontFamily.scss";
+
+.get_started_model {
+  width: 60%;
+  margin-top: 0px;
+  padding-bottom: $base-gap;
+  background-color: $white;
+  border-top-left-radius: $big-radius;
+  border-top-right-radius: $big-radius;
+  position: relative;
+
+  .QR-code {
+    padding-bottom: 30px;
+  }
+
+  .get_started_User_name {
+    margin-top: $small-gap;
+    font-family: $MULISH;
+    font-weight: 900;
+    font-size: $heading-font;
+  }
+  .center-text {
+    text-align: center;
+  }
+  .top-margin {
+    margin-top: $medium-gap;
+  }
+
+  .get_started_User {
+    margin-top: $base-gap;
+    font-family: $MULISH;
+    font-weight: 900;
+    font-size: $big-font;
+    color: $lightBlue;
+
+    .copyIcons {
+      fill: $lightBlue !important;
+      fill-opacity: 1 !important;
+    }
+  }
+
+  .get_started_accepts {
+    font-weight: 500;
+    font-size: $title-font;
+    line-height: 130.55%;
+    margin-top: $bigger-gap;
+    font-family: $DIN-MEDIUM;
+    font-weight: 500;
+    margin: 38px 29px;
+    // margin-bottom: 38px;
+    text-align: center;
+    margin-top: $bigger-gap;
+    font-size: $title-font;
+
+    .highlight {
+      color: $lightBlue !important;
+      fill-opacity: 1 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .get-Started-model {
+    width: 100%;
+    margin-top: 20px;
+    padding: $larger-gap $double-gap;
+
+    .get_started_User {
+      background-color: $backgroundColor;
+      width: 202px;
+      height: 41px;
+      color: $white;
+      border-radius: 23px;
+      margin: 20px auto;
+
+      .copyIcons {
+        fill: $white !important;
+        fill-opacity: 1 !important;
+      }
+    }
+
+    .get_started_accepts {
+      margin-top: 50px;
+    }
+  }
+}

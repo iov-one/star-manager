@@ -1,0 +1,53 @@
+@import "../../Themes/sizes.scss";
+@import "src/styles/constants";
+
+.section-Others {
+  background-color: $background-default;
+
+  .container {
+    margin-top: 45px;
+
+    .content {
+      margin: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-Others {
+    height: auto;
+    min-height: 0;
+
+    .container {
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-Others {
+    height: auto;
+    min-height: 0px;
+    background-color: $background-default;
+
+    .container {
+      margin-top: 0px;
+      width: 95%;
+      height: auto;
+
+      .content {
+        padding: 0px 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .section-Others {
+    padding-top: $bigger-gap;
+
+    .container {
+      height: auto;
+    }
+  }
+}

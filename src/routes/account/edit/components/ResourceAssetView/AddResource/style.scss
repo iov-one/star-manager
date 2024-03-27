@@ -1,0 +1,33 @@
+@import "src/styles/constants";
+
+.new-resource-view {
+  .new-resource-item-view-edit-box {
+    margin: 8px 0 16px 0;
+    display: flex;
+
+    .new-resource-item-view-edit-box-asset-dropdown {
+      height: 50px;
+      display: flex;
+      width: 14ex;
+    }
+
+    .new-resource-item-view-edit-box-address {
+      margin: 0 0 0 8px;
+      width: 100%;
+    }
+  }
+
+  .profile-form-form-preferred-asset-selector-dropdown-empty {
+    color: $text-primary;
+    font-style: italic;
+    opacity: 0.75;
+
+    &:before {
+      content: "\2014  ";
+    }
+
+    &:after {
+      content: " \2014";
+    }
+  }
+}

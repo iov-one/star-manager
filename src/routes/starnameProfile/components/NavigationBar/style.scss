@@ -1,0 +1,142 @@
+@import "src/styles/constants";
+@import "../../Themes/sizes.scss";
+@import "../../Themes/fontFamily.scss";
+
+.navigation-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: $background-paper;
+}
+
+.navigation-logo-img {
+  object-fit: contain;
+  height: 28.12px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navigation-side-container {
+  display: none;
+
+  .side-menu {
+    height: 32px;
+    width: 22px;
+  }
+}
+
+.navigation-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .navigation-button {
+    font-size: $big-font;
+    line-height: 130%;
+    text-align: right;
+    color: $text-primary;
+    font-family: $MULISH;
+
+    margin-right: 72px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation-logo-img {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation-header {
+    padding: 0px $bigger-gap;
+  }
+
+  .navigation-button-container {
+    .navigation-login-btn {
+      margin-right: 20px;
+    }
+
+    .last-Button {
+      margin-right: -10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navigation-header {
+    padding: 0px $medium-gap;
+    justify-content: center;
+    height: 80px;
+    margin-top: 0px;
+  }
+
+  .navigation-logo-img {
+    object-fit: contain;
+    height: 37.66px;
+    width: 166px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navigation-side-container {
+    display: inline;
+    position: absolute;
+    left: 17px;
+    top: 30px;
+
+    .side-menu {
+      height: 22px;
+      width: 32px;
+      object-fit: cover;
+    }
+  }
+
+  .navigation-button-container {
+    display: none !important;
+  }
+}
+
+//  Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 768px) {
+  .navigation-header {
+    padding: 0px $medium-gap;
+    justify-content: center;
+    height: 80px;
+    margin-top: 0px;
+    background-color: $background-paper;
+  }
+
+  .navigation-logo-img {
+    object-fit: contain;
+    height: 37.66px;
+    width: 166px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navigation-side-container {
+    display: inline;
+    position: absolute;
+    left: 17px;
+    top: 30px;
+
+    .side-menu {
+      height: 22px;
+      width: 32px;
+      object-fit: cover;
+    }
+  }
+
+  .navigation-button-container {
+    display: none !important;
+  }
+}

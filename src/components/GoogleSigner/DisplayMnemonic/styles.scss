@@ -1,0 +1,79 @@
+@import "src/styles/constants";
+
+.google-drive-mnemonic {
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $background-paper;
+
+  .google-drive-mnemonic-tab {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    transition: transform 300ms ease-out;
+
+    &.second {
+      transform: none;
+
+      &.visible {
+        transform: translateX(-100%);
+      }
+    }
+
+    &.first {
+      transform: translateX(-100%);
+
+      &.visible {
+        transform: none;
+      }
+    }
+
+    .google-drive-mnemonic-tab-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 16px;
+      white-space: initial;
+
+      .google-drive-mnemonic-words {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 24px 0;
+
+        .google-drive-mnemonic-words-word {
+          line-height: 2em;
+          height: 2em;
+          padding: 0;
+          margin: 8px;
+          border-radius: 1.5em;
+          font-weight: 600;
+          text-shadow: 0 0 2px white;
+          text-align: center;
+          color: $text-primary;
+          background-color: $primary-light;
+          border-bottom: 3px solid darken($primary-dark, 0.05);
+          cursor: pointer;
+
+          &.selected {
+            background-color: $primary-dark;
+            color: $primary-contrast-text;
+          }
+        }
+      }
+
+      .google-drive-mnemonic-buttons {
+        text-align: right;
+        margin: 24px 0;
+
+        button {
+          width: 25%;
+          margin: 0 0 0 8px;
+        }
+      }
+    }
+  }
+}

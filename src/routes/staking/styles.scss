@@ -1,0 +1,82 @@
+@import "src/styles/constants";
+
+.staking-container {
+  overflow-y: auto;
+
+  .claim-rewards-container {
+    max-width: $wide-view-width;
+    margin: 24px auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .total-staked-display-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .staking-top-alert-container {
+    max-width: $wide-view-width;
+    margin: 24px auto;
+    margin-bottom: 0%;
+    .top-alert:not(:first-child) {
+      margin-top: 1.5%;
+    }
+
+    .rewards-banner {
+      background-color: $primary-main;
+    }
+  }
+
+  .validators-table-content {
+    max-width: $wide-view-width;
+    width: $wide-view-width;
+    background-color: $primary-contrast-text;
+    margin: 24px auto;
+    box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    .validators-table-content-table {
+      table-layout: fixed;
+    }
+
+    .validators-table-content-header {
+      height: 48px;
+      background-color: rgb(237, 234, 234);
+    }
+  }
+
+  .validators-table-pagination {
+    flex-shrink: 0;
+    margin-left: 2.5px;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .staking-container {
+    width: 100%;
+
+    .validators-table-content {
+      overflow-x: hidden;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      margin: 4px 0 122px 0;
+
+      .validators-table-content-table {
+        display: block;
+      }
+
+      .validators-table-content-body {
+        display: block;
+      }
+
+      .validators-table-content-header,
+      .staked-validators-header {
+        display: none;
+      }
+    }
+  }
+}

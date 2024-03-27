@@ -1,0 +1,14 @@
+@import "src/styles/constants";
+
+.get-started-container {
+  margin-top: 4%;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+@media (max-width: $min-desktop-width) {
+  .get-started-container {
+    margin-top: 8%;
+  }
+}

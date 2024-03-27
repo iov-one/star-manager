@@ -1,0 +1,98 @@
+@import "../../../starnameProfile/Themes/colors.scss";
+@import "src/styles/constants.scss";
+
+$avatar-size: 100px;
+$border-width: 18px;
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 16px -8px rgba(100, 150, 200, 0.05);
+
+  padding: 56px;
+
+  background-color: white;
+  border-radius: 15px;
+  margin: 90px auto 75px auto;
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $avatar-size + $border-width;
+    height: $avatar-size + $border-width;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, $primary-dark 0%, #acbae4 100%);
+    overflow: hidden;
+    margin-top: -($avatar-size + $border-width);
+
+    img {
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: $avatar-size * 0.5;
+    }
+  }
+
+  h1,
+  h2,
+  h4 {
+    margin: 16px 0 8px 0;
+    line-height: 1.22em;
+    min-height: 1.22em;
+    color: $defaultFont;
+    font-family: "Mulish", sans-serif;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  & > * {
+    margin: 10px 0;
+  }
+
+  .user-starname {
+    min-width: 20%;
+    background-color: $primary-main;
+    padding: 6px 16px 6px 16px;
+    border-radius: 20px;
+
+    h6 {
+      color: white;
+    }
+  }
+
+  .to-pay-user-note {
+    letter-spacing: 1px;
+    max-width: 250px;
+    color: rgb(85, 84, 84);
+  }
+
+  .accepted-note {
+    opacity: 0.85;
+    font-size: small;
+    font-weight: 100;
+  }
+
+  .starname-logo {
+    margin: 4% 0 0 0;
+    width: 200px;
+  }
+
+  .showcase-assets {
+    margin: 6% 0 -8% 0;
+    div {
+      border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .profile-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+@import "src/styles/constants";
+
+.dropdown-menu {
+  cursor: pointer;
+  width: 34px;
+  height: 24px;
+
+  .dropdown-menu-dots {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .dropdown-menu-dots-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 4px;
+      background-color: $primary-main;
+    }
+  }
+}
+
+iframe {
+  border: none;
+  transition: all 0.225s;
+}
+
+.tx-result-toast-content {
+  .tx-result-toast-content-text {
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: $primary-contrast-text;
+
+    i {
+      margin: 0 4px;
+    }
+  }
+}

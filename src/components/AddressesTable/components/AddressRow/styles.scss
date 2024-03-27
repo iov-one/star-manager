@@ -1,0 +1,51 @@
+@import "src/styles/constants";
+
+.address-table-address-row {
+  border-bottom-width: 1px;
+  border-bottom-color: $primary-light;
+  border-bottom-style: solid;
+
+  display: flex;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .address-table-address-row-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address-table-address-row-cell {
+    padding: 9px 4px;
+    line-height: 18px;
+    color: $text-secondary;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+
+    &:first-child {
+      flex: 0 0 12ex;
+    }
+
+    &.address-table-address-row-cell-address {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+
+    &:first-child {
+      font-Weight: 600;
+    }
+
+    &.copy {
+      & > svg {
+        cursor: pointer;
+      }
+
+      padding-right: 0;
+    }
+  }
+}

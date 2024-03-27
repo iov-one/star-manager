@@ -1,0 +1,26 @@
+@import "src/styles/constants";
+
+.wallet-signers-container {
+  display: flex;
+  max-width: $narrow-view-width;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 12px;
+
+  .wallet-signer {
+    &:first-child {
+      width: 100%;
+    }
+
+    &:not(&:first-child) {
+      flex: 1 40%;
+    }
+
+    display: inline-block;
+    margin: 6px 8px;
+    button {
+      border-radius: 12px;
+    }
+  }
+}

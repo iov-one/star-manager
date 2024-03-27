@@ -1,0 +1,34 @@
+.staked-validator-table-content-row {
+  &:hover {
+    cursor: pointer;
+  }
+  .staked-validator-table-content-row-title {
+    width: 35%;
+
+    .staked-validator-table-content-row-title-container {
+      padding-left: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .staked-validator-table-content-row-delegation {
+    width: 25%;
+  }
+
+  .staked-validator-table-content-row-rewards {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .staked-validator-table-content-row {
+    .staked-validator-table-content-row-title {
+      width: 60%;
+    }
+    .staked-validator-table-content-row-delegation {
+      width: 10%;
+    }
+  }
+}

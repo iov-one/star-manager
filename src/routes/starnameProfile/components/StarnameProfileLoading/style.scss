@@ -1,0 +1,16 @@
+@import "src/styles/constants";
+
+.profile-view-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-view-loading-container {
+    height: 400px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "src/styles/constants";
+
+.dropdownSubHeader {
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.content {
+  padding: 16px 24px;
+  background-color: $background-paper;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px -4px black;
+  width: $narrow-view-width;
+
+  form {
+    fieldset.group {
+      border: none;
+    }
+  }
+
+  &.requesting {
+    form {
+      opacity: 0.5;
+    }
+  }
+
+  .group-title {
+    padding: 16px 0 8px 0;
+    text-align: center;
+  }
+
+  .field {
+    margin: 16px 0 4px 0;
+
+    label {
+      display: block;
+      margin: 0 0 8px 0;
+    }
+
+    .helper {
+      display: flex;
+      align-items: center;
+
+      &.valid {
+        color: seagreen;
+      }
+
+      .helperIcon {
+        margin: 0 2px;
+      }
+
+      .helperText {
+        display: block;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+
+    .dropdown {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .buttonsBox {
+    display: flex;
+    padding: 6px 0 0 0;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+      flex-basis: 30%;
+
+      &:last-child {
+        margin-left: 8px;
+      }
+    }
+  }
+}

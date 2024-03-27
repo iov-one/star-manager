@@ -1,0 +1,23 @@
+.transactions-table-pager {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 24px;
+
+  .transactions-table-pager-button {
+    border-radius: 20px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    min-width: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    background-color: transparent;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

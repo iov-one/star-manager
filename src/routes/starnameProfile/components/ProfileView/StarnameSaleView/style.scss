@@ -1,0 +1,64 @@
+@import "src/styles/constants";
+
+.starname-sale-container {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 36px 24px 36px;
+  text-align: center;
+
+  margin-top: -20px;
+
+  .starname-bought-note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    span {
+      font-size: large;
+    }
+  }
+
+  .heading-container {
+    .starname-container {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      background-color: $primary-main;
+      width: fit-content;
+      padding: 4px 24px;
+      border-radius: 18px;
+      span {
+        color: white;
+        font-size: xx-large;
+      }
+    }
+
+    h4 {
+      color: rgb(84, 83, 83);
+    }
+  }
+
+  .escrow-price-container {
+    h1 {
+      font-family: DIN, sans-serif;
+      font-size: 60px;
+      color: #8c57c9;
+    }
+    h6 {
+      font-family: DIN, sans-serif;
+      font-size: large;
+      color: rgb(118, 117, 117);
+    }
+  }
+
+  .wallet-actions-container {
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 8px;
+  }
+}

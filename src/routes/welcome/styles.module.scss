@@ -1,0 +1,94 @@
+@import "src/styles/constants";
+
+.rootContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .pager {
+    &[data-active-page="0"] {
+      .page:nth-child(1) {}
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 16px 0 0 0;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px auto;
+    text-align: center;
+    color: #808080;
+    width: 360px;
+  }
+
+  .logo {
+    width: 300px;
+    /*  The -8px is a small trick to make the weights right */
+    margin: 24px 0 24px -8px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .addressView {
+    margin: 48px auto;
+    width: 480px;
+    display: flex;
+
+    background-color: $accent-main;
+    border-radius: 24px;
+    height: 48px;
+    justify-content: space-between;
+
+    .addressViewAddressContainer {
+      padding: 0 0 0 24px;
+
+      h1 {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0 auto;
+        line-height: 48px;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      width: 48px;
+      cursor: pointer;
+    }
+  }
+
+  .mnemonic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 48px 0;
+    max-width: 480px;
+
+    .mnemonicWord {
+      display: block;
+      padding: 0 16px;
+      height: 36px;
+      text-align: center;
+      font-size: 18px;
+      background-color: $accent-main;
+      font-weight: 600;
+      border-radius: 18px;
+      line-height: 34px;
+      cursor: pointer;
+
+      &.inactiveWord {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "src/styles/constants";
+
+.certificates-block-container {
+  width: 100%;
+  height: 100%;
+  width: $normal-view-width + 250px;
+  margin: 64px auto;
+
+  .certificate-block-header-container {
+    display: flex;
+    width: auto;
+
+    .certificate-block-actions-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 24px;
+      gap: 16px;
+    }
+  }
+
+  .certificates-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    .certificate-view {
+      padding: 20px 20px;
+      display: block;
+      width: 50%;
+
+      &:only-child {
+        width: 65%;
+      }
+    }
+  }
+
+  .not-found-container {
+    width: $normal-view-width;
+    margin: auto;
+    h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 4%;
+    }
+  }
+
+  .card-body {
+    .card-content-body {
+      margin-top: -2.5%;
+    }
+  }
+
+  .card-subheader {
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.view-fields-container {
+  padding-right: 26px;
+  & > * {
+    margin-top: 8px;
+  }
+
+  & > *:first-child {
+    margin-top: 0px;
+  }
+}
+
+.preview-loading-container {
+  .text {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .certificates-block-container {
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+
+    .card-subheader {
+      max-width: 160px;
+    }
+
+    .certificates-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+
+      .certificate-view {
+        padding: 8px 0px;
+        display: block;
+        width: 100%;
+
+        &:only-child {
+          width: 100%;
+        }
+      }
+    }
+
+    .not-found-container {
+      width: 100%;
+      margin-top: 8%;
+    }
+  }
+
+  .view-fields-container {
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "src/styles/constants";
+
+.application-drawer {
+  position: fixed;
+  top: $application-bar-height;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  max-width: 270px;
+  transform: translateX(100%);
+  background-color: $background-paper;
+  box-shadow: -2px 4px 8px -4px black;
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.25s;
+  z-index: 5;
+
+  &.open {
+    transform: translateX(0);
+
+    button,
+    .application-bar-logout-button {
+      padding: 24px 0;
+
+      &:not(:first-child) {
+        border-top: 1px solid $secondary-light;
+      }
+    }
+
+    button {
+      width: 100%;
+      background-color: transparent;
+      border-radius: 0;
+      color: $primary-main;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .application-drawer {
+    top: $responsive-bar-height;
+  }
+}

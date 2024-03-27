@@ -1,0 +1,236 @@
+@import "src/styles/constants";
+
+.buy-options-container {
+  .middle-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    font-size: large;
+  }
+}
+
+.balances-view {
+  width: 100%;
+
+  .balance-view-buy-button {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 0 16px 0;
+
+    i {
+      margin-right: 10px;
+    }
+
+    .buy-tokens-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: fit-content;
+      margin-top: -2%;
+      padding: 2px 14px;
+      background-color: #9463b5;
+      color: white;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  .balance-view-action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+
+    button {
+      flex: 0 33%;
+      margin: 0 8px;
+      border-radius: 4px;
+
+      i {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .balance-view-separator {
+    height: 1px;
+    background: linear-gradient(
+      to left,
+      transparent,
+      $primary-light 10%,
+      $primary-light 80%,
+      transparent
+    );
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .balance-view-title {
+    margin: 16px 0;
+
+    .balance-view-title-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .balance-view-title-loading-text {
+        margin: 0 8px;
+      }
+    }
+
+    &.empty {
+      text-align: center;
+      font-style: italic;
+      color: $text-secondary;
+    }
+  }
+
+  .balance-view-address-entry {
+    display: flex;
+    align-items: center;
+
+    .balance-view-address-entry-asset-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      overflow: hidden;
+      flex: 0 0 32px;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    .balance-view-address-entry-content {
+      flex: 1;
+      margin: 0 8px;
+      overflow: hidden;
+
+      .balance-view-address-entry-content-address {
+        color: $text-secondary;
+      }
+    }
+
+    .balance-view-address-entry-copy-button {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  .balance-view-balance-entry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    padding: 8px 0;
+
+    .balance-view-balance-entry-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      overflow: hidden;
+      flex: 0 0 32px;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    .balance-view-balance-entry-description {
+      flex: 1 1;
+      margin: 0 8px;
+
+      .balance-view-balance-entry-description-ticker {
+        font-weight: 600;
+        font-size: 16px;
+        overflow: hidden;
+      }
+
+      .balance-view-balance-entry-amount {
+        flex: 0 0;
+        justify-self: flex-end;
+      }
+    }
+  }
+
+  .other-balance-view-balance-entry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .other-balance-view-balance-entry-description {
+      flex: 1 1;
+      margin: 0 8px;
+
+      .other-balance-view-balance-entry-description-ticker {
+        font-weight: 600;
+        font-size: 16px;
+        overflow: hidden;
+      }
+
+      .other-balance-view-balance-entry-amount {
+        flex: 0 0;
+        justify-self: flex-end;
+      }
+    }
+  }
+
+  .cosmostation-integration {
+    margin-top: 5%;
+    margin-bottom: -4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
+
+    .note {
+      font-size: 100%;
+      color: rgb(78, 78, 78);
+    }
+
+    .links {
+      font-size: 100%;
+      color: rgb(58, 57, 57);
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .balances-view {
+    overflow: hidden;
+    width: 100%;
+
+    .balance-view-action-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 48px;
+
+      button {
+        flex: 0 50%;
+        margin: 0 8px;
+        border-radius: 4px;
+
+        i {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}

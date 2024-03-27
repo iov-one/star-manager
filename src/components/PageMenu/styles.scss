@@ -1,0 +1,67 @@
+@import "src/styles/constants";
+
+.application-content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  left: $expanded-menu-width;
+  top: $application-bar-height;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+
+  .application-content-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: rgba(red, 0.15);
+    width: 100%;
+
+    .application-content-warning-content {
+      .application-content-warning-title {
+        max-width: 600px;
+        margin: 0 auto 8px auto;
+
+        h4 {
+          color: crimson;
+        }
+      }
+
+      .application-content-warning-message {
+        max-width: 600px;
+        margin: 0 auto;
+
+        * {
+          color: crimson;
+        }
+      }
+    }
+
+    .application-content-warning-action {
+      margin: 0 0 0 24px;
+      button {
+        background-color: crimson;
+        color: $primary-contrast-text;
+
+        span {
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &.empty-menu {
+    left: 0;
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .application-content {
+    top: $responsive-bar-height;
+    left: 0;
+  }
+}

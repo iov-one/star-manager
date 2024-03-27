@@ -1,0 +1,68 @@
+@import "src/styles/constants";
+
+.name-view-list {
+  width: $normal-view-width;
+  margin: 0 auto;
+
+  .name-view-list-basic {
+    border-top-left-radius: 0;
+  }
+
+  .name-view-list-basic-header {
+    margin-top: 8%;
+    width: 140px;
+    height: 35px;
+    background-color: $primary-main;
+    border-bottom: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    .name-view-list-basic-header-text {
+      height: 100%;
+      color: white;
+      font-size: large;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .name-view-list-premium {
+    @extend .name-view-list-basic;
+  }
+
+  .name-view-list-premium-header {
+    i {
+      opacity: 0.85;
+      margin-right: 8px;
+    }
+    @extend .name-view-list-basic-header;
+    background-color: rgb(143, 83, 184);
+
+    .name-view-list-premium-header-text {
+      @extend .name-view-list-basic-header-text;
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .name-view-list {
+    width: 100%;
+    margin: 24px 0;
+
+    .name-view-list-basic-header {
+      margin-top: 10%;
+      width: 140px;
+      height: 30px;
+    }
+
+    .name-view-list-premium-header {
+      @extend .name-view-list-basic-header;
+    }
+  }
+}

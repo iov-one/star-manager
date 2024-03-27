@@ -1,0 +1,44 @@
+@import "src/styles/constants";
+
+tr.transaction-detail-view, .transaction-detail-view {
+  width: 100%;
+
+  .transaction-detail-view-row-content {
+    .transaction-detail-view-row-wrapper {
+      display: grid;
+      width: 100%;
+      margin: 0;
+      padding: 16px;
+      grid-template-columns: 40% 20% 40%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 8px;
+
+      .transaction-detail-view-cell {
+      }
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  tr.transaction-detail-view, .transaction-detail-view {
+    display: block;
+
+    td.transaction-detail-view-row-content, .transaction-detail-view-row-content {
+      display: block;
+      padding: 0 8px;
+
+      .transaction-detail-view-row-wrapper {
+        display: block;
+        width: 100%;
+
+        .transaction-detail-view-cell {
+          margin: 8px 0 0 0;
+
+          * {
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
